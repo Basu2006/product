@@ -7,5 +7,5 @@ def test_product_details():
         "Quantity     : 10\n"
         "Price        : 15000"
     )
-
+    
     assert product_details("P101", "Mobile", 10, 15000) == expected
