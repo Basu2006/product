@@ -8,7 +8,7 @@ def product(product_id, name, quantity, price):
     return result
 
 
-if __name__ == "main":
+if __name__ == "__main__":
     product_id = "P101"
     name = "Mobile"
     quantity = 5
