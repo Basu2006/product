@@ -1,4 +1,4 @@
-def product_details(product_id, name, quantity, price):
+def product(product_id, name, quantity, price):
     result = (
         f"Product ID: {product_id}\n"
         f"Product Name: {name}\n"
