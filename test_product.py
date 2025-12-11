@@ -1,17 +1,11 @@
-def product_details(product_id, name, quantity, price):
-    result = (
-        f"Product ID: {product_id}\n"
-        f"Product Name: {name}\n"
-        f"Quantity: {quantity}\n"
-        f"Price: {price}"
+from product import product_details
+
+def test_product_details():
+    expected = (
+        "Product ID   : P101\n"
+        "Product Name : Mobile\n"
+        "Quantity     : 10\n"
+        "Price        : 15000"
     )
-    return result
 
-
-if __name__ == "__main__":
-    product_id = "P101"
-    name = "Mobile"
-    quantity = 5
-    price = 45000
-
-    print(product_details(product_id, name, quantity, price))
+    assert product_details("P101", "Mobile", 10, 15000) == expected
